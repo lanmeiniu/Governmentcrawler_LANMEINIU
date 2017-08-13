@@ -56,7 +56,7 @@ public class FyjxwMysqlPipeline implements Pipeline {
             session.rollback();
         } finally {
             session.close();
-            System.out.println("TEST CLOSED");
+            System.out.println("Data is stored in the database");
         }
     }
 }

@@ -13,6 +13,7 @@ import us.codecraft.webmagic.Spider;
 public class FyjxwDocumentCrawler {
 
     public static void crawl() {
+        //创建Spider，addUrl添加初始的URL
         Spider.create(new FyjxwDocumentPageProcessor()).addUrl("http://www.fuyang.gov.cn/fy/jxj")
                 .setDownloader(new SeleniumDownloader())
                 .addPipeline(new FyjxwMysqlPipeline())
